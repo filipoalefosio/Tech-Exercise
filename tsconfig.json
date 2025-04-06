@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "CommonJS",
+      "lib": ["ESNext", "DOM"],
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "baseUrl": ".",
+      "paths": {
+        "@pages/*": ["tests/pages/*"],
+        "@utils/*": ["tests/utils/*"]
+      }
+    }
+  }
+  
