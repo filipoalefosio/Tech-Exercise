@@ -4,7 +4,7 @@ This document provides instructions on how to set up, configure, and run the aut
 It is intended for new team members and reviewers to understand and execute the test suite efficiently.
 
 How to get the latest code?
-  - You will need to clone the repo to your local machine, one of the ways to do it is run the command below (ensure you have the correct URL for the repo)
+  - You will need to clone the repo to your local machine, one of the ways to do it is run the command below (ensure you retrieved the correct URL for the repo from the repo green "code" button)
   - git clone https://github.com/filipoalefosio/Tech-Exercise.git (repository-url)
       - Once cloned command into the working folder
       - cd automationExercise (repository-folder)
