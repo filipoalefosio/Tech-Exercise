@@ -4,7 +4,7 @@ export class HomePage {
   constructor(private page: Page) {}
 
   async navigate() {
-    await this.page.goto('/');
+    await this.page.goto(process.env.BASE_URL || 'https://automationexercise.com/');
   }
 
   async clickSignupLogin() {

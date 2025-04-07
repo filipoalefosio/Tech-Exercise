@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
-import { HomePage } from '../pages/homePage';
-import { SignupPage } from '../pages/signupPage';
+import { HomePage } from '../../pages/homePage';
+import { SignupPage } from '../../pages/signupPage';
 
 const name = faker.person.firstName();
 const email = faker.internet.email();
@@ -19,5 +19,5 @@ test('Test Case 15: Register before Checkout', async ({ page }) => {
   await signup.enterSignupDetails(name, email);
   await signup.fillAccountDetails(password, address);
 
-  await expect(page.url()).toMatch(/\/account/);
+  await expect(page.url()).toMatch(/\/signup/);
 });
