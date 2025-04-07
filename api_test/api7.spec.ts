@@ -3,22 +3,24 @@ import { test, expect, request } from '@playwright/test';
 test('Verify Login API - API 7: Successful Login', async () => {
   const loginUrl = 'https://automationexercise.com/api/verifyLogin';
   
-  // Create a new API request context
+  // New API request context
   const apiContext = await request.newContext();
 
-  // Send the POST request with valid credentials
+  // POST request with valid credentials
   const response = await apiContext.post(loginUrl, {
-    data: {
-      email: 'validEmail@example.com',  // Use any valid email
-      password: 'D3v3nv1r0m3nt',  // Replace with test or dev password dependant on what env you use
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',  // Setting the Content-Type header
+    },
+    form: {
+      email: 'fil.ale@hotmail.com',  // Replace with the email you setup the account with
+      password: 'password123',  // Replace with the password you used to setup account with
     },
   });
 
   // Verify the response status
-  expect(response.status()).toBe(200);  // Ensure the response status is 200 (OK)
-
-  // Optionally, you can validate the response body
+  expect(response.status()).toBe(200);  
+  // Validate the response body
   const responseBody = await response.json();
-  console.log('Response Body:', responseBody); // Log the response to check its content
-  expect(responseBody).toHaveProperty('message', 'Bad request, email or password parameter is missing in POST request.');
+  console.log('Response Body:', responseBody); 
+  expect(responseBody).toHaveProperty('message', 'User exists!');
 });
