@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
-import { HomePage } from '../pages/homePage';
-import { SignupPage } from '../pages/signupPage';
+import { HomePage } from '../../pages/homePage';
+import { SignupPage } from '../../pages/signupPage';
 
 const name = faker.person.firstName();
 const email = faker.internet.email();
