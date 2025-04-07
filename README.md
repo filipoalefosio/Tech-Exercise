@@ -1,4 +1,4 @@
-#This is a test suite for the Automation Exercise web page
+# This is a test suite for the Automation Exercise web page
 
 If new to this project, it is recommended to work your way through the GETTINGSTARTED.md doc 
 
