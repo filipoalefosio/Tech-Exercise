@@ -1,0 +1,4 @@
+# Issues found
+
+  - ## "Proceed to checkout" button element nested in multiple HTML sections and containers making it difficult to interact with or select"
+  - ## API's didn't match the response it was giving (double checked using postman)
