@@ -5,9 +5,9 @@ It is intended for new team members and reviewers to understand and execute the 
 
 How to get the latest code?
   - You will need to clone the repo to your local machine, one of the ways to do it is run the command below (ensure you have the correct URL for the repo)
-  - git clone <repository-url>
+  - git clone repository-url
       - Once cloned command into the working folder
-      - cd <repository-folder>
+      - cd repository-folder
 
 Note: If you're unsure if you have the latest code run - #git pull or #git pull origin main
 
