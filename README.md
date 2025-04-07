@@ -1,6 +1,6 @@
 # This is a test suite for the Automation Exercise web page
 
-If new to this project, it is recommended to work your way through the [Getting_Started.md]() doc 
+If new to this project, it is recommended to work your way through the [Getting_Started.md](https://github.com/filipoalefosio/Tech-Exercise/blob/main/Getting_Started.md#:~:text=**-,Purpose,-of%20this%20document) doc 
 
 
 # Quick setup 
