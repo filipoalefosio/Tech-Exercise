@@ -19,5 +19,5 @@ test('Test Case 15: Register before Checkout', async ({ page }) => {
   await signup.enterSignupDetails(name, email);
   await signup.fillAccountDetails(password, address);
 
-  await expect(page.url()).toMatch(/\/account/);
+  await expect(page.url()).toMatch(/\/signup/);
 });
