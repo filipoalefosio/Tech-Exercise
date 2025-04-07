@@ -1,9 +1,15 @@
-import { Page } from '@playwright/test';
+ import { Page } from '@playwright/test';
 
 export class CheckoutPage {
-  constructor(private page: Page) {}
+  private placeOrderButton: any;
 
-  async placeOrder() {
-    await this.page.click('a[href="/payment"]');
+  constructor(private page: Page) {
+    this.placeOrderButton = page.locator('a[href="/payment"]'); // Making sure the button is visible or interactable.
   }
+ 
+  async placeOrder() {
+    //await this.placeOrderButton.waitFor({ state: 'visible', timeout: 60000 });
+
+      await this.placeOrderButton.click();
+  }  
 }
