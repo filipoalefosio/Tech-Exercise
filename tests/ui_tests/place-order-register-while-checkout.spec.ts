@@ -37,6 +37,7 @@ test('Test Case 14: Place Order: Register while Checkout', async ({ page }) => {
 
   await cart.proceedToCheckout();
   await checkout.placeOrder();
+  await expect(page).toHaveURL('/payment');
   await payment.fillPaymentDetails(name, card, cvc, expiryMonth, expiryYear);
 
   await expect(page.locator('h2')).toContainText('Order Placed!'); // Verify order placed
