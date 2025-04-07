@@ -1,6 +1,6 @@
 # This is a test suite for the Automation Exercise web page
 
-If new to this project, it is recommended to work your way through the GETTINGSTARTED.md doc 
+If new to this project, it is recommended to work your way through the Getting_Started.md doc 
 
 
 # Quick setup 
