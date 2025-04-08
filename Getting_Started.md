@@ -44,6 +44,8 @@ Running the tests
       - npx playwright test --headed
   - To view the report/results of the tests that ran (Normally this automatically pops up but if not run the command below)
       - npx playwright show-report
+  - To run API tests
+    - npx playwright test api_test
    
 
 Troubleshooting
