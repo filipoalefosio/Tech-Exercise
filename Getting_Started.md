@@ -44,9 +44,11 @@ Running the tests
       - npx playwright test --headed
   - To view the report/results of the tests that ran (Normally this automatically pops up but if not run the command below)
       - npx playwright show-report
-  - To run API tests
+  - To run all API tests (note: ensure you're in the api_test folder)
     - npx playwright test api_test
-   
+  - To run a specific API test (note: ensure you're in the api_test folder)
+   - npx playwright test api_test/verifyLogin.spec.ts (example)
+
 
 Troubleshooting
   - If your tests are not running ensure there are no typos in the command and ensure dependencies are install correctly.
