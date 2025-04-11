@@ -23,17 +23,17 @@ test('Test Case 14: Place Order: Register while Checkout', async ({ page }) => {
   const payment = new PaymentPage(page);
 
   await home.navigate();
-  await expect(page).toHaveTitle('Automation Exercise'); // Verify homepage
+  await expect(page).toHaveTitle('Automation Exercise'); // Verify homepage against the webpage title.
 
   await home.clickSignupLogin();
   await signup.enterSignupDetails(name, email);
   await signup.fillAccountDetails(password, address);
 
-  await page.click('a[href="/"]'); // go to home page
+  await page.click('a[href="/"]'); // Going to home page
   await page.click('a[href="/products"]');
-  await page.click('a[data-product-id="1"]'); // adding product to cart
+  await page.click('a[data-product-id="1"]'); // Adding a product to cart
   await page.click('a[href="/view_cart"]');
-  await expect(page).toHaveURL(/.*view_cart/); // Verify cart page
+  await expect(page).toHaveURL(/.*view_cart/); // Verifying cart page
 
   await cart.proceedToCheckout();
   await checkout.placeOrder();
@@ -43,7 +43,7 @@ test('Test Case 14: Place Order: Register while Checkout', async ({ page }) => {
   await expect(page.locator('h2')).toContainText('Order Placed!'); // Verify order placed
 
   // Account Deletion Step
-  await page.click('button#delete-account'); // Adjust selector
+  await page.click('button#delete-account'); 
   await expect(page.locator('h2')).toHaveText('ACCOUNT DELETED!');
-  await page.click('button#continue'); // Adjust selector
+  await page.click('button#continue'); 
 });
