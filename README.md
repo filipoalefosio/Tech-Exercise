@@ -9,13 +9,32 @@ If new to this project, it is recommended to work your way through the [Getting_
 
  git clone https://github.com/filipoalefosio/Tech-Exercise.git
 
-### Command into the project folder
+### Command into the project test folder to run/view the test scripts 
 
- cd automationExercise
+cd Tech-Exercise/tests/ui_tests
 
-### Install dependancies
+### Install dependancies (If you don't have them already you may need to install)
 
  npm install 
+
+### If the above doesn't work and keeps saying command not found run the below command 
+
+#### Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+
+##### in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+##### Download and install Node.js:
+nvm install 22
+
+##### Verify the Node.js version:
+node -v # Should print "v22.14.0".
+nvm current # Should print "v22.14.0".
+
+##### Verify npm version:
+npm -v # Should print "10.9.2".
+
 
 ### Run tests (note: ensure you're in the ui_tests folder to run the tests)
 
