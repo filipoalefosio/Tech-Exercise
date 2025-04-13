@@ -55,3 +55,7 @@ npm test my-specific-test.spec.ts (example file name)
 ### If you're wanting to run in headed mode (note: ensure you're in ui_tests folder)
 
 npx playwright test --headed
+
+### If the test doesn't produce a report you can run this command to view it.
+
+npx playwright show-report
