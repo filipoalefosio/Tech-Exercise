@@ -17,6 +17,14 @@ If new to this project, it is recommended to work your way through the [Getting_
 
  npm install 
 
-### Run tests (note: this will run all tests, to target a specific one you will need to specify that test) 
+### Run tests (note: ensure you're in the ui_tests folder to run the tests)
 
  npm test
+
+#### If you're wanting to run specific test (note: ensure you're in the ui_tests folder)
+
+npm test my-specific-test.spec.ts (example file name)
+
+### If you're wanting to run in headed mode (note: ensure you're in ui_tests folder)
+
+npx playwright test --headed
