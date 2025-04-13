@@ -1,4 +1,4 @@
-** Purpose of this document
+## Purpose of this document
 
 This document provides instructions on how to set up, configure, and run the automated tests for the Tech Test website. 
 It is intended for new team members and reviewers to understand and execute the test suite efficiently.
