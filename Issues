@@ -1,5 +1,2 @@
 # Issues found
 
-  - ## "checkoutPage.ts" wasn't interacting well with the test written (testcase 14), need to debug to see where it's falling over
-    - initial thoughts on it is it's not finding the DOM to be able to select it or it's not made available to be able to interact with the button.
-
