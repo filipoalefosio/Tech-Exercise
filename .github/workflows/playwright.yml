@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies (skip optional deps like fsevents)
-        run: npm ci --no-optional
+      - name: Install dependencies (omit optional)
+        run: npm ci --omit=optional
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
