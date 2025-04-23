@@ -4,7 +4,7 @@ import { HomePage } from '../../pages/homePage';
 import { SignupPage } from '../../pages/signupPage';
 import { CartPage } from '../../pages/cartPage';
 import { CheckoutPage } from '../../pages/checkoutPage';
-import { PaymentPage } from '../../pages/paymentPage';
+import { PaymentPage } from '../../pages/paymentpage';
 
 const name = faker.person.fullName();
 const email = faker.internet.email();
